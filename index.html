@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="DOLLAR KILAT - Spin & Win">
-<title>DOLLAR KILAT - Spin & Win</title>
+<meta name="description" content="BABABET22 - Spin & Win">
+<title>BABABET22 - Spin & Win</title>
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:#170000;color:#fff}
@@ -100,7 +100,7 @@ body:before,body:after{
     <div class="wheel-wrap">
       <canvas id="wheel" width="900" height="900"></canvas>
       <div class="pointer"></div>
-      <div class="center">DOLLAR<small>KILAT</small></div>
+      <div class="center">BABABET<small>22</small></div>
     </div>
     <button id="spinBtn" class="spin">↻ &nbsp; PUTAR</button>
     <div class="note">Demo: setiap perangkat hanya dapat memutar 1 kali.</div>
@@ -175,7 +175,7 @@ function weightedPrize(){
 
 const btn=document.getElementById("spinBtn");
 btn.addEventListener("click",()=>{
-  if(spinning || localStorage.getItem("dollarKilatSpun")==="1") return;
+  if(spinning || localStorage.getItem("BABABET22")==="1") return;
   spinning=true;btn.disabled=true;
 
   const index=weightedPrize();
@@ -185,7 +185,7 @@ btn.addEventListener("click",()=>{
   canvas.style.transform=`rotate(${rotation}deg)`;
 
   setTimeout(()=>{
-    localStorage.setItem("dollarKilatSpun","1");
+    localStorage.setItem("BABABET22","1");
     document.getElementById("prize").textContent=prizes[index].label;
     document.getElementById("modal").classList.add("show");
     spinning=false;
@@ -194,7 +194,7 @@ btn.addEventListener("click",()=>{
 
 document.getElementById("closeBtn").onclick=()=>document.getElementById("modal").classList.remove("show");
 
-if(localStorage.getItem("dollarKilatSpun")==="1"){
+if(localStorage.getItem("BABABET22")==="1"){
   btn.disabled=true;
   btn.textContent="✓ SUDAH DIPUTAR";
 }
