@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -5,199 +6,868 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="description" content="BABABET22 - Spin & Win">
 <title>BABABET22 - Spin & Win</title>
+
 <style>
-*{box-sizing:border-box}
-html,body{margin:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:#170000;color:#fff}
+*{
+  box-sizing:border-box
+}
+
+html,body{
+  margin:0;
+  min-height:100%;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#170000;
+  color:#fff
+}
+
 body{
   background:
     radial-gradient(circle at 50% 35%,#650b0b 0,#2a0202 42%,#090000 100%);
   overflow-x:hidden;
 }
-body:before,body:after{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
-  background:linear-gradient(115deg,transparent 35%,rgba(255,40,0,.12) 50%,transparent 65%);
+
+body:before,
+body:after{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  background:linear-gradient(
+    115deg,
+    transparent 35%,
+    rgba(255,40,0,.12) 50%,
+    transparent 65%
+  );
 }
-.container{position:relative;z-index:1;width:min(920px,94%);margin:auto;padding:25px 0 45px}
+
+.container{
+  position:relative;
+  z-index:1;
+  width:min(920px,94%);
+  margin:auto;
+  padding:25px 0 45px
+}
+
 .logo{
-  text-align:center;font-size:clamp(36px,9vw,76px);font-weight:1000;line-height:.82;
-  font-style:italic;letter-spacing:-3px;
-  color:#ffd83d;text-shadow:0 4px 0 #8b2500,0 0 22px #ff6a00;
+  text-align:center;
+  font-size:clamp(36px,9vw,76px);
+  font-weight:1000;
+  line-height:.82;
+  font-style:italic;
+  letter-spacing:-3px;
+  color:#ffd83d;
+  text-shadow:
+    0 4px 0 #8b2500,
+    0 0 22px #ff6a00;
 }
-.logo span{display:block;color:#ff3020;font-size:.72em;margin-top:8px}
+
+.logo span{
+  display:block;
+  color:#ff3020;
+  font-size:.72em;
+  margin-top:8px
+}
+
 .tag{
-  width:max-content;max-width:95%;margin:18px auto 24px;padding:9px 20px;
-  border:2px solid #ffcf38;border-radius:7px;background:#280303;
-  color:#ffe58a;font-weight:900;text-align:center
+  width:max-content;
+  max-width:95%;
+  margin:18px auto 24px;
+  padding:9px 20px;
+  border:2px solid #ffcf38;
+  border-radius:7px;
+  background:#280303;
+  color:#ffe58a;
+  font-weight:900;
+  text-align:center
 }
+
 .card{
-  border:2px solid #d99d20;border-radius:24px;padding:20px;
-  background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.58));
+  border:2px solid #d99d20;
+  border-radius:24px;
+  padding:20px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,.25),
+      rgba(0,0,0,.58)
+    );
   box-shadow:0 0 35px rgba(255,102,0,.18)
 }
-.wheel-wrap{position:relative;width:min(560px,94vw);aspect-ratio:1;margin:0 auto 18px}
+
+.wheel-wrap{
+  position:relative;
+  width:min(560px,94vw);
+  aspect-ratio:1;
+  margin:0 auto 18px
+}
+
 #wheel{
-  width:100%;height:100%;border-radius:50%;display:block;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  display:block;
   border:12px solid #ffc52d;
-  box-shadow:0 0 0 5px #8f4b00,0 0 40px rgba(255,190,0,.4);
-  transition:transform 5.2s cubic-bezier(.12,.72,.13,1);
+  box-shadow:
+    0 0 0 5px #8f4b00,
+    0 0 40px rgba(255,190,0,.4);
+
+  transition:
+    transform 5.2s cubic-bezier(.12,.72,.13,1);
+
   background:#222;
 }
+
 .pointer{
-  position:absolute;top:-8px;left:50%;transform:translateX(-50%);
-  width:0;height:0;border-left:28px solid transparent;border-right:28px solid transparent;
-  border-top:58px solid #ff2c16;filter:drop-shadow(0 3px 2px #000);z-index:4
+  position:absolute;
+  top:-8px;
+  left:50%;
+  transform:translateX(-50%);
+  width:0;
+  height:0;
+  border-left:28px solid transparent;
+  border-right:28px solid transparent;
+  border-top:58px solid #ff2c16;
+  filter:drop-shadow(0 3px 2px #000);
+  z-index:4
 }
+
 .center{
-  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
-  width:112px;height:112px;border-radius:50%;display:grid;place-items:center;text-align:center;
-  background:#120909;border:7px solid #ffc52d;box-shadow:0 0 20px #000;
-  font-weight:1000;color:#ffd52e;font-size:19px;line-height:.9
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:112px;
+  height:112px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  background:#120909;
+  border:7px solid #ffc52d;
+  box-shadow:0 0 20px #000;
+  font-weight:1000;
+  color:#ffd52e;
+  font-size:19px;
+  line-height:.9;
+  z-index:3;
 }
-.center small{display:block;color:#ff3420;font-size:13px}
+
+.center small{
+  display:block;
+  color:#ff3420;
+  font-size:13px
+}
+
 .spin{
-  display:block;margin:18px auto 8px;border:0;border-radius:999px;
-  padding:17px 65px;background:linear-gradient(#ff5a35,#c50000);
-  color:white;font-size:25px;font-weight:1000;cursor:pointer;
-  box-shadow:0 6px 0 #680000,0 0 28px rgba(255,50,0,.45);
+  display:block;
+  margin:18px auto 8px;
+  border:0;
+  border-radius:999px;
+  padding:17px 65px;
+  background:linear-gradient(#ff5a35,#c50000);
+  color:white;
+  font-size:25px;
+  font-weight:1000;
+  cursor:pointer;
+  box-shadow:
+    0 6px 0 #680000,
+    0 0 28px rgba(255,50,0,.45);
 }
-.spin:active{transform:translateY(4px);box-shadow:0 2px 0 #680000}
-.spin:disabled{opacity:.55;cursor:not-allowed}
-.note{text-align:center;color:#d9c7c7;font-size:13px;margin-bottom:22px}
-.winners{border:2px solid #c9921c;border-radius:18px;padding:18px;background:rgba(0,0,0,.5)}
-.winners h2{text-align:center;margin:0 0 14px;color:#ffd642;font-size:25px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+
+.spin:active{
+  transform:translateY(4px);
+  box-shadow:0 2px 0 #680000
+}
+
+.spin:disabled{
+  opacity:.55;
+  cursor:not-allowed
+}
+
+.note{
+  text-align:center;
+  color:#d9c7c7;
+  font-size:13px;
+  margin-bottom:22px
+}
+
+.winners{
+  border:2px solid #c9921c;
+  border-radius:18px;
+  padding:18px;
+  background:rgba(0,0,0,.5)
+}
+
+.winners h2{
+  text-align:center;
+  margin:0 0 14px;
+  color:#ffd642;
+  font-size:25px
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px
+}
+
 .win{
-  display:flex;justify-content:space-between;align-items:center;gap:10px;
-  border:1px solid #a87918;border-radius:12px;padding:11px 14px;background:#130909
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  border:1px solid #a87918;
+  border-radius:12px;
+  padding:11px 14px;
+  background:#130909
 }
-.name{color:#eee}.amount{color:#ffe04c;font-weight:900;white-space:nowrap}
+
+.name{
+  color:#eee
+}
+
+.amount{
+  color:#ffe04c;
+  font-weight:900;
+  white-space:nowrap
+}
+
 .modal{
-  position:fixed;inset:0;background:rgba(0,0,0,.78);display:none;place-items:center;
-  z-index:10;padding:20px
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.78);
+  display:none;
+  place-items:center;
+  z-index:10;
+  padding:20px
 }
-.modal.show{display:grid}
+
+.modal.show{
+  display:grid
+}
+
 .modalbox{
-  width:min(430px,95%);padding:30px;text-align:center;border:3px solid #ffd23b;
-  border-radius:24px;background:linear-gradient(160deg,#4b0606,#120000);
+  width:min(430px,95%);
+  padding:30px;
+  text-align:center;
+  border:3px solid #ffd23b;
+  border-radius:24px;
+  background:
+    linear-gradient(160deg,#4b0606,#120000);
   box-shadow:0 0 60px rgba(255,166,0,.35)
 }
-.modalbox h2{color:#ffd53b;font-size:34px;margin:0 0 8px}
-.prize{font-size:42px;font-weight:1000;color:#fff;margin:15px 0}
-.close{border:0;border-radius:10px;padding:12px 30px;background:#ffb900;font-weight:900;cursor:pointer}
-.footer{text-align:center;color:#bbaaaa;font-size:12px;margin-top:24px}
+
+.modalbox h2{
+  color:#ffd53b;
+  font-size:34px;
+  margin:0 0 8px
+}
+
+.prize{
+  font-size:42px;
+  font-weight:1000;
+  color:#fff;
+  margin:15px 0
+}
+
+.close{
+  border:0;
+  border-radius:10px;
+  padding:12px 30px;
+  background:#ffb900;
+  font-weight:900;
+  cursor:pointer
+}
+
+.footer{
+  text-align:center;
+  color:#bbaaaa;
+  font-size:12px;
+  margin-top:24px
+}
+
 @media(max-width:600px){
- .card{padding:10px}.grid{grid-template-columns:1fr}.spin{width:90%;padding:15px}
- .center{width:88px;height:88px;font-size:15px}.pointer{border-left-width:21px;border-right-width:21px;border-top-width:45px}
+
+  .card{
+    padding:10px
+  }
+
+  .grid{
+    grid-template-columns:1fr
+  }
+
+  .spin{
+    width:90%;
+    padding:15px
+  }
+
+  .center{
+    width:88px;
+    height:88px;
+    font-size:15px
+  }
+
+  .pointer{
+    border-left-width:21px;
+    border-right-width:21px;
+    border-top-width:45px
+  }
+
 }
 </style>
 </head>
+
 <body>
+
 <div class="container">
-  <div class="logo">DOLLAR <span>KILAT</span></div>
-  <div class="tag">SPIN &amp; WIN • PUTAR RODA, DAPATKAN HADIAH MENARIK</div>
+
+  <div class="logo">
+    BABABET
+    <span>22</span>
+  </div>
+
+  <div class="tag">
+    SPIN &amp; WIN • PUTAR RODA, DAPATKAN HADIAH MENARIK
+  </div>
 
   <section class="card">
+
     <div class="wheel-wrap">
-      <canvas id="wheel" width="900" height="900"></canvas>
+
+      <canvas
+        id="wheel"
+        width="900"
+        height="900">
+      </canvas>
+
       <div class="pointer"></div>
-      <div class="center">BABABET<small>22</small></div>
+
+      <div class="center">
+        BABABET
+        <small>22</small>
+      </div>
+
     </div>
-    <button id="spinBtn" class="spin">↻ &nbsp; PUTAR</button>
-    <div class="note">Demo: setiap perangkat hanya dapat memutar 1 kali.</div>
+
+    <button id="spinBtn" class="spin">
+      ↻ &nbsp; PUTAR
+    </button>
+
+    <div class="note">
+      Demo: setiap perangkat hanya dapat memutar 1 kali.
+    </div>
 
     <div class="winners">
-      <h2>🏆 PEMENANG TERBARU</h2>
-      <div id="winnerGrid" class="grid"></div>
+
+      <h2>
+        🏆 PEMENANG TERBARU
+      </h2>
+
+      <div
+        id="winnerGrid"
+        class="grid">
+      </div>
+
     </div>
+
   </section>
 
-  <div class="footer">Mainkan dengan bijak • Halaman demo Lucky Wheel</div>
+  <div class="footer">
+    Mainkan dengan bijak • Halaman demo Lucky Wheel
+  </div>
+
 </div>
 
+
+<!-- MODAL HASIL -->
 <div id="modal" class="modal">
+
   <div class="modalbox">
-    <h2>🎉 SELAMAT!</h2>
-    <div>Kamu mendapatkan</div>
-    <div id="prize" class="prize">Rp0</div>
-    <button class="close" id="closeBtn">TUTUP</button>
+
+    <h2>
+      🎉 SELAMAT!
+    </h2>
+
+    <div>
+      Kamu mendapatkan
+    </div>
+
+    <div
+      id="prize"
+      class="prize">
+      Rp 0
+    </div>
+
+    <button
+      class="close"
+      id="closeBtn">
+      TUTUP
+    </button>
+
   </div>
+
 </div>
+
 
 <script>
+
+/* =========================================================
+   DATA HADIAH
+   =========================================================
+
+   label  = tulisan yang ditampilkan
+   value  = nominal sebenarnya
+   weight = bobot/peluang
+
+   TOTAL WEIGHT = 100
+   ========================================================= */
+
 const prizes = [
-  { name: "Rp 100.000", weight: 1 },
-  { name: "Rp 50.000", weight: 5 },
-  { name: "Rp 20.000", weight: 10 },
-  { name: "Coba Lagi", weight: 84 }
+
+  {
+    label: "Rp 100.000",
+    value: 100000,
+    weight: 1
+  },
+
+  {
+    label: "Rp 50.000",
+    value: 50000,
+    weight: 5
+  },
+
+  {
+    label: "Rp 20.000",
+    value: 20000,
+    weight: 10
+  },
+
+  {
+    label: "Coba Lagi",
+    value: 0,
+    weight: 84
+  }
+
 ];
 
-const names = ["andi***","budi***","siti***","agus***","rani***","fajar***","dian***","eka***","yusuf***","putri***"];
-const canvas = document.getElementById("wheel");
-const ctx = canvas.getContext("2d");
-const cx=450, cy=450, radius=425;
-const seg = (Math.PI*2)/prizes.length;
-let rotation=0, spinning=false;
+
+/* =========================================================
+   NAMA PEMENANG DEMO
+   ========================================================= */
+
+const names = [
+  "andi***",
+  "budi***",
+  "siti***",
+  "agus***",
+  "rani***",
+  "fajar***",
+  "dian***",
+  "eka***",
+  "yusuf***",
+  "putri***"
+];
+
+
+/* =========================================================
+   CANVAS
+   ========================================================= */
+
+const canvas =
+  document.getElementById("wheel");
+
+const ctx =
+  canvas.getContext("2d");
+
+const cx = 450;
+const cy = 450;
+const radius = 425;
+
+const seg =
+  (Math.PI * 2) / prizes.length;
+
+let rotation = 0;
+
+let spinning = false;
+
+
+/* =========================================================
+   FORMAT RUPIAH
+   ========================================================= */
+
+function rupiah(n){
+
+  return "Rp " +
+    Number(n).toLocaleString("id-ID");
+
+}
+
+
+/* =========================================================
+   GAMBAR RODA
+   ========================================================= */
 
 function drawWheel(){
-  ctx.clearRect(0,0,900,900);
-  prizes.forEach((p,i)=>{
-    const start=-Math.PI/2+i*seg, end=start+seg;
-    ctx.beginPath();ctx.moveTo(cx,cy);ctx.arc(cx,cy,radius,start,end);ctx.closePath();
-    ctx.fillStyle=i%2===0?"#b90e0e":"#111a1d";ctx.fill();
-    ctx.strokeStyle="#f6c72d";ctx.lineWidth=5;ctx.stroke();
 
-    ctx.save();ctx.translate(cx,cy);ctx.rotate(start+seg/2);
-    ctx.textAlign="right";ctx.fillStyle="#fff";ctx.font="900 34px Arial";
-    ctx.shadowColor="#000";ctx.shadowBlur=5;ctx.fillText(p.label,radius-35,12);
+  ctx.clearRect(
+    0,
+    0,
+    900,
+    900
+  );
+
+
+  prizes.forEach((p,i)=>{
+
+    const start =
+      -Math.PI / 2 +
+      i * seg;
+
+    const end =
+      start + seg;
+
+
+    /* BAGIAN RODA */
+
+    ctx.beginPath();
+
+    ctx.moveTo(
+      cx,
+      cy
+    );
+
+    ctx.arc(
+      cx,
+      cy,
+      radius,
+      start,
+      end
+    );
+
+    ctx.closePath();
+
+
+    ctx.fillStyle =
+      i % 2 === 0
+        ? "#b90e0e"
+        : "#111a1d";
+
+    ctx.fill();
+
+
+    /* GARIS PEMISAH */
+
+    ctx.strokeStyle =
+      "#f6c72d";
+
+    ctx.lineWidth = 5;
+
+    ctx.stroke();
+
+
+    /* TEKS HADIAH */
+
+    ctx.save();
+
+    ctx.translate(
+      cx,
+      cy
+    );
+
+    ctx.rotate(
+      start + seg / 2
+    );
+
+    ctx.textAlign =
+      "right";
+
+    ctx.fillStyle =
+      "#fff";
+
+    ctx.font =
+      "900 34px Arial";
+
+    ctx.shadowColor =
+      "#000";
+
+    ctx.shadowBlur = 5;
+
+
+    ctx.fillText(
+      p.label,
+      radius - 35,
+      12
+    );
+
     ctx.restore();
+
   });
+
 }
+
 drawWheel();
 
-function rupiah(n){return "Rp"+n.toLocaleString("id-ID")}
+
+/* =========================================================
+   PEMENANG TERBARU
+   ========================================================= */
+
 function renderWinners(){
-  const el=document.getElementById("winnerGrid");
-  el.innerHTML="";
-  names.forEach((n,i)=>{
-    const p=prizes[(i*3+2)%prizes.length];
-    el.innerHTML += `<div class="win"><span class="name">👤 ${n}</span><span class="amount">${p.label}</span></div>`;
+
+  const el =
+    document.getElementById(
+      "winnerGrid"
+    );
+
+  el.innerHTML = "";
+
+
+  names.forEach((name,i)=>{
+
+    /*
+      Menggunakan data hadiah yang sama
+      dengan roda.
+    */
+
+    const prize =
+      prizes[
+        (i * 3 + 2) %
+        prizes.length
+      ];
+
+
+    el.innerHTML += `
+
+      <div class="win">
+
+        <span class="name">
+          👤 ${name}
+        </span>
+
+        <span class="amount">
+          ${prize.value > 0
+            ? rupiah(prize.value)
+            : prize.label}
+        </span>
+
+      </div>
+
+    `;
+
   });
+
 }
+
 renderWinners();
 
+
+/* =========================================================
+   SISTEM RANDOM BERDASARKAN WEIGHT
+   ========================================================= */
+
 function weightedPrize(){
-  // Contoh bobot demo. Ubah angka di sini jika ingin mengatur peluang.
-  const weights=[45,25,14,8,5,2,1];
-  let total=weights.reduce((a,b)=>a+b,0), r=Math.random()*total;
-  for(let i=0;i<weights.length;i++){ if((r-=weights[i])<0) return i; }
-  return 0;
+
+  const total =
+    prizes.reduce(
+      (sum, prize) =>
+        sum + prize.weight,
+      0
+    );
+
+
+  let random =
+    Math.random() * total;
+
+
+  for(
+    let i = 0;
+    i < prizes.length;
+    i++
+  ){
+
+    random -=
+      prizes[i].weight;
+
+
+    if(random < 0){
+
+      return i;
+
+    }
+
+  }
+
+
+  return prizes.length - 1;
+
 }
 
-const btn=document.getElementById("spinBtn");
-btn.addEventListener("click",()=>{
-  if(spinning || localStorage.getItem("BABABET22")==="1") return;
-  spinning=true;btn.disabled=true;
 
-  const index=weightedPrize();
-  const centerDeg=index*(360/prizes.length)+(180/prizes.length);
-  const targetDeg=360*6 + (360-centerDeg);
-  rotation += targetDeg;
-  canvas.style.transform=`rotate(${rotation}deg)`;
+/* =========================================================
+   TOMBOL SPIN
+   ========================================================= */
 
-  setTimeout(()=>{
-    localStorage.setItem("BABABET22","1");
-    document.getElementById("prize").textContent=prizes[index].label;
-    document.getElementById("modal").classList.add("show");
-    spinning=false;
-  },5300);
-});
+const btn =
+  document.getElementById(
+    "spinBtn"
+  );
 
-document.getElementById("closeBtn").onclick=()=>document.getElementById("modal").classList.remove("show");
 
-if(localStorage.getItem("BABABET22")==="1"){
-  btn.disabled=true;
-  btn.textContent="✓ SUDAH DIPUTAR";
+btn.addEventListener(
+  "click",
+  ()=>{
+
+    /* CEGAH SPIN GANDA */
+
+    if(
+      spinning ||
+      localStorage.getItem(
+        "BABABET22"
+      ) === "1"
+    ){
+
+      return;
+
+    }
+
+
+    spinning = true;
+
+    btn.disabled = true;
+
+
+    /* PILIH HADIAH */
+
+    const index =
+      weightedPrize();
+
+    const prize =
+      prizes[index];
+
+
+    /* =====================================================
+       POSISI HADIAH
+
+       Roda memiliki jumlah segmen sesuai prizes.length.
+       Pointer berada di bagian atas.
+       ===================================================== */
+
+    const segmentDeg =
+      360 / prizes.length;
+
+
+    const centerDeg =
+      index * segmentDeg +
+      segmentDeg / 2;
+
+
+    /*
+      6 putaran penuh
+      kemudian berhenti pada hadiah terpilih.
+    */
+
+    const targetDeg =
+      360 * 6 +
+      (360 - centerDeg);
+
+
+    rotation +=
+      targetDeg;
+
+
+    canvas.style.transform =
+      `rotate(${rotation}deg)`;
+
+
+    /* =====================================================
+       TUNGGU ANIMASI SELESAI
+       ===================================================== */
+
+    setTimeout(()=>{
+
+      /* SIMPAN STATUS SPIN */
+
+      localStorage.setItem(
+        "BABABET22",
+        "1"
+      );
+
+
+      /* ===================================================
+         TAMPILKAN NOMINAL KEMENANGAN
+         =================================================== */
+
+      const prizeElement =
+        document.getElementById(
+          "prize"
+        );
+
+
+      if(prize.value > 0){
+
+        prizeElement.textContent =
+          rupiah(prize.value);
+
+      }else{
+
+        prizeElement.textContent =
+          prize.label;
+
+      }
+
+
+      /* TAMPILKAN MODAL */
+
+      document
+        .getElementById("modal")
+        .classList
+        .add("show");
+
+
+      spinning = false;
+
+    },5300);
+
+  }
+);
+
+
+/* =========================================================
+   TUTUP MODAL
+   ========================================================= */
+
+document
+  .getElementById("closeBtn")
+  .onclick = ()=>{
+
+    document
+      .getElementById("modal")
+      .classList
+      .remove("show");
+
+  };
+
+
+/* =========================================================
+   CEK APAKAH SUDAH PERNAH SPIN
+   ========================================================= */
+
+if(
+  localStorage.getItem(
+    "BABABET22"
+  ) === "1"
+){
+
+  btn.disabled = true;
+
+  btn.textContent =
+    "✓ SUDAH DIPUTAR";
+
 }
+
 </script>
+
 </body>
 </html>
+```
