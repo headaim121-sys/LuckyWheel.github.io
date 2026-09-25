@@ -1,0 +1,18 @@
+lucky-wheel/
+│
+├── data/
+│
+├── public/
+│   ├── assets/
+│   │   └── sounds/
+│   ├── css/
+│   ├── js/
+│   ├── admin.html
+│   └── index.html
+│
+├── server/
+│
+├── .env.example
+├── .gitignore
+├── README.md
+└── package.json
